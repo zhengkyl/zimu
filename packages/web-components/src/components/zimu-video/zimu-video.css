@@ -1,0 +1,5 @@
+@import '../../../node_modules/@vime/core/themes/default.css';
+
+:host {
+  display: block;
+}
