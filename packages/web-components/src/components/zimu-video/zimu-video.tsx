@@ -1,5 +1,6 @@
 import { Component, Host, h } from '@stencil/core';
 import '@vime/core';
+// import '../zimu-subtitles/zimu-subtitles';
 
 @Component({
   tag: 'zimu-video',
@@ -17,6 +18,11 @@ export class ZimuVideo {
             <source data-src="https://media.vimejs.com/720p.mp4" type="video/mp4" />
             <track default kind="subtitles" src="https://media.vimejs.com/subs/english.vtt" srclang="en" label="English" />
           </vm-video>
+          <vm-ui>
+            <zimu-subtitles />
+            {/* <vm-captions /> */}
+            {/* <vm-default-controls /> */}
+          </vm-ui>
         </vm-player>
       </Host>
     );

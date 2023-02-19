@@ -9,10 +9,13 @@ import { PlayerProps } from "@vime/core";
 export { PlayerProps } from "@vime/core";
 export namespace Components {
     interface ZimuSubtitles {
+        "currentTextTrack": PlayerProps['currentTextTrack'];
         "hidden": boolean;
         "isControlsActive": PlayerProps['isControlsActive'];
+        "isTextTrackVisible": PlayerProps['isTextTrackVisible'];
         "isVideoView": PlayerProps['isVideoView'];
         "playbackStarted": PlayerProps['playbackStarted'];
+        "textTracks": PlayerProps['textTracks'];
     }
     interface ZimuVideo {
     }
@@ -37,10 +40,13 @@ declare global {
 }
 declare namespace LocalJSX {
     interface ZimuSubtitles {
+        "currentTextTrack"?: PlayerProps['currentTextTrack'];
         "hidden"?: boolean;
         "isControlsActive"?: PlayerProps['isControlsActive'];
+        "isTextTrackVisible"?: PlayerProps['isTextTrackVisible'];
         "isVideoView"?: PlayerProps['isVideoView'];
         "playbackStarted"?: PlayerProps['playbackStarted'];
+        "textTracks"?: PlayerProps['textTracks'];
     }
     interface ZimuVideo {
     }
